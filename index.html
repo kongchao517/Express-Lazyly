@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *,*::after,*::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #imgBox{
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #imgBox img{
+            margin-right: 20px;
+        }
+        .goods_word{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+        <div id="imgBox">
+
+        </div>
+  
+        <script id="test" type="text/html">
+              {{each list as value i}}
+                  <img src="{{value.imagesPath}}" alt="">
+                  <div class="goods_word">
+                    <span>产品名称：{{value.goodsName}}</span>
+                    <span>产品价格：{{value.goodsPrice}}</span>
+                    <span>产品销量：{{value.goodsSa}}</span>
+                    <span>产品库存：{{value.goodsSku}}</span>
+                  </div>
+              {{/each}}
+        </script>
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="http://cdn.staticfile.org/artTemplate.js/3.0.1/template.js"></script>
+    <script>
+        $.ajax({
+            type:'get',
+            url:'http://localhost:3002/api/goods/goodsList',
+            success:function(data){
+                console.log(data);
+                var html = template('test', {list:data.goodsList});
+                $('#imgBox').html(html);
+            },
+            error:function(){
+                console.log('error');
+            }
+        })
+    </script>
+</body>
+</html>
