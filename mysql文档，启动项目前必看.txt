@@ -1,0 +1,5 @@
+1,下载可视化数据库工具（navicat）等；
+2,建数据库nodeproject
+3,将register.sql , user_info.sql , goods_info.sql数据表导入
+4,项目克隆下来之后先要npm i下载依赖包
+5,项目启动方式：node app.js或者nodemon app.js
