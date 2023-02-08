@@ -1,6 +1,0 @@
-INSERT INTO `register` VALUES (1, '朵儿', '123456', '123456', '2018-8-13 00:00:00');
-INSERT INTO `register` VALUES (2, '朵儿1', '123456', '123456', '2018-8-1 00:00:00');
-INSERT INTO `register` VALUES (3, '朵儿2', '123456', '123456', '2018-8-13 09:27:29');
-INSERT INTO `register` VALUES (4, '朵儿7', '123456', '123456', '2018-8-13 09:27:27');
-INSERT INTO `register` VALUES (5, '朵儿4', '123456', '123456', '2018-8-13 09:27:25');
-INSERT INTO `register` VALUES (6, '朵儿3', '123456', '123456', '2018-8-13 09:27:22');

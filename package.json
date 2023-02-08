@@ -2,16 +2,18 @@
   "name": "node",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "yarn && node app.js",
+    "dev": "yarn && node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
     "body-parser": "^1.18.3"
