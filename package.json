@@ -5,13 +5,16 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "yarn && node app.js",
-    "dev": "yarn && node app.js"
+    "start:dev": "cross-env NODE_ENV=development node app.js",
+    "start:test": "cross-env NODE_ENV=test node app.js ",
+    "start:pro": "cross-env NODE_ENV=production node app.js "
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
     "express": "^4.16.3",
     "mysql": "^2.18.1"
   },
