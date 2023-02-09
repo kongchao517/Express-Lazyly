@@ -1,12 +1,12 @@
 // 字符串的下划线格式转驼峰格式，eg：hello_world => helloWorld
-function underline2Hump(s) {
+export const  underline2Hump=(s) =>{
   return s.replace(/_(\w)/g, function(all, letter) {
     return letter.toUpperCase()
   })
 }
 
 // JSON对象的key值转换为下划线格式
-function jsonToUnderline(obj) {
+export const  jsonToUnderline=(obj)=> {
   if (obj instanceof Array) {
     obj.forEach(function(v, i) {
       jsonToUnderline(v)
@@ -23,5 +23,3 @@ function jsonToUnderline(obj) {
   }
   return obj
 }
-
-module.exports = {jsonToUnderline} 
