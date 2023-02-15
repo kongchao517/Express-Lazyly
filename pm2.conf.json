@@ -1,0 +1,23 @@
+//vscode 右下角点击json，搜索json with comments
+//就可以在json文件里面写注释了
+{
+  "apps": [
+      {
+          "name": "pm2-serve", 
+          "script": "app.js",
+          "watch": true,  
+          "ignore_watch": [  
+              "node_modules",
+              "logs"
+          ],
+          //日志添加时间头
+          "log_date_format": "YYYY-MM-DD HH:mm:ss",
+          //错误日志
+          "error_file": "./logs/pm2-err.log",
+          //访问日志
+          "out_file": "./logs/pm2-out.log",
+          //多进程
+          "instances": 2
+      }
+  ]
+}
