@@ -3,13 +3,14 @@
  * @Author: lazyly
  * @Date: 2023-02-08 16:15:03
  * @LastEditors: lazyly
- * @LastEditTime: 2023-02-15 14:53:18
+ * @LastEditTime: 2023-02-16 10:14:18
  */
 const express=require("express")
 const bodyParser=require("body-parser")
 const connection =require("./sql.js")
 const helmet=require("helmet")
 const app = express();
+app.use('/', express.static('public/apidoc'));
 app.use(helmet());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
@@ -34,7 +35,9 @@ connection.connect(function (err) {
     console.log("mysql连接成功!");
   }
 });
-require("./app/routes/tutorial.routes.js")(app);
+require("./app/routes/index.js")(app);
+// 设置 public 文件夹为存放静态文件的目录
+
 //配置服务端口
 var server = app.listen("3303", function () {
   var host = server.address().address;
