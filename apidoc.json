@@ -3,6 +3,6 @@
   "version": "0.1.0",
   "description": "",
   "title": "接口文档",
-  "url" : "http://localhost:3303",
-  "sampleUrl": "http://localhost:3303"
+  "url" : "http://localhost:3303/apidoc",
+  "sampleUrl": "http://localhost:3303/apidoc"
 }

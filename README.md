@@ -1,4 +1,14 @@
+<!--
+ * @Descripttion: 
+ * @Author: lazyly
+ * @Date: 2023-02-08 16:15:03
+ * @LastEditors: lazyly
+ * @LastEditTime: 2023-02-16 11:33:51
+-->
 # 启动命令
+
+生成接口文档
+npm run apidoc / yarn apidoc
 
 开发环境
 npm run start:dev / yarn start:dev 

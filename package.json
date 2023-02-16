@@ -4,15 +4,15 @@
   "description": "",
   "scripts": {
     "start:dev": "cross-env NODE_ENV=development nodemon app.js",
-    "start:test": "cross-env NODE_ENV=test node app.js ",
-    "start:pro": "cross-env NODE_ENV=production node app.js pm2 start pm2.conf.json",
+    "start:test": "cross-env NODE_ENV=test node app.js && pm2 start pm2.conf.json",
+    "start:pro": "cross-env NODE_ENV=production node app.js && pm2 start pm2.conf.json",
     "apidoc": "apidoc -i app/routes -o public/apidoc"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "apidoc": "^0.54.0",
-    "body-parser": "^1.20.1",
+    "body-parser": "1.18.3",
     "cookie-parser": "^1.4.6",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
@@ -27,6 +27,5 @@
     "pm2": "^5.2.2"
   },
   "devDependencies": {
-    "body-parser": "^1.18.3"
   }
 }

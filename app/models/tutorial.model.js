@@ -3,9 +3,10 @@
  * @Author: lazyly
  * @Date: 2023-02-08 16:15:03
  * @LastEditors: lazyly
- * @LastEditTime: 2023-02-15 14:53:18
+ * @LastEditTime: 2023-02-16 13:44:36
  */
 const sql = require("../../sql.js");
+var jsonToUnderline = require('../../util.js').jsonToUnderline
 
 // constructor
 const Tutorial = function(tutorial) {
@@ -21,7 +22,7 @@ Tutorial.findById = (occur_period, result) => {
       return result(null, {
         code:200,
         message:"查询成功！",
-        data:res
+        data:jsonToUnderline(res)
       });
     }
   });
@@ -40,7 +41,7 @@ Tutorial.getAll = (industry_name, result) => {
       return result(null, {
         code:200,
         message:"查询成功！",
-        data:res
+        data:jsonToUnderline(res)
       });
     }
   });

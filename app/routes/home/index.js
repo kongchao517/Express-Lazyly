@@ -1,9 +1,8 @@
 module.exports = (app) => {
   const tutorials = require("../../controllers/tutorial.controller.js");
-
   var router = require("express").Router();
   /**
-*  @api {get} /api/tutorials 核算分析112111
+*  @api {get} /api/tutorials 核算分析
  * @apiDescription 查询所有 根据industry_name模糊查询
  * @apiName tutorials
  * @apiGroup 小屏端接口
