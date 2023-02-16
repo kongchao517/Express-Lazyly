@@ -21,11 +21,14 @@
     "express-generator": "^4.16.1",
     "helmet": "^6.0.1",
     "jade": "^1.11.0",
+    "lint-staged": "^12.4.2",
     "morgan": "^1.10.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.20",
-    "pm2": "^5.2.2"
+    "pm2": "^5.2.2",
+    "prettier": "^2.8.4"
   },
   "devDependencies": {
+   
   }
 }

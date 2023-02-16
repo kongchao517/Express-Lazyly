@@ -1,8 +1,8 @@
 /*
  * @Descripttion:连接数据库
- * @Author: lazyly
+ * @Author: kongchao
  * @Date: 2023-02-10 15:52:26
- * @LastEditors: lazyly
+ * @LastEditors: kongchao
  * @LastEditTime: 2023-02-15 14:30:35
  */
 const path = require("path");

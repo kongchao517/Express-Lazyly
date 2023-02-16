@@ -1,9 +1,9 @@
 
 /*
  * @Descripttion:控制层-可根据req判断参数和err返回状态
- * @Author: lazyly
+ * @Author: kongchao
  * @Date: 2023-02-08 16:15:03
- * @LastEditors: lazyly
+ * @LastEditors: kongchao
  * @LastEditTime: 2023-02-15 14:53:18
  */
 const Tutorial = require("../models/tutorial.model.js");

@@ -1,8 +1,8 @@
 /*
  * @Descripttion:sql语句
- * @Author: lazyly
+ * @Author: kongchao
  * @Date: 2023-02-08 16:15:03
- * @LastEditors: lazyly
+ * @LastEditors: kongchao
  * @LastEditTime: 2023-02-16 13:44:36
  */
 const sql = require("../../sql.js");

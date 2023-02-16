@@ -1,8 +1,8 @@
 /*
  * @Descripttion: 返回结果转换
- * @Author: lazyly
+ * @Author: kongchao
  * @Date: 2023-02-16 14:59:08
- * @LastEditors: lazyly
+ * @LastEditors: kongchao
  * @LastEditTime: 2023-02-16 15:05:47
  */
 // 字符串的下划线格式转驼峰格式，eg：hello_world => helloWorld
