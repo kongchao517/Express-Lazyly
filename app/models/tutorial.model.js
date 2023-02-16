@@ -14,8 +14,8 @@ const Tutorial = function(tutorial) {
   this.description = tutorial.description;
   this.published = tutorial.published;
 };
-Tutorial.findById = (occur_period, result) => {
-  sql.query(`select * from nanshan_economic_small.small_accounting_indices WHERE occur_period = ${occur_period}`, (err, res) => {
+Tutorial.findById = (id, result) => {
+  sql.query(`select * from shops WHERE id = ${id}`, (err, res) => {
     if (err) {
       return result(err, null);;
     }else{
@@ -27,11 +27,11 @@ Tutorial.findById = (occur_period, result) => {
     }
   });
 };
-Tutorial.getAll = (industry_name, result) => {
-  let query = "SELECT * FROM nanshan_economic_small.small_accounting_indices";
+Tutorial.getAll = (shop_name, result) => {
+  let query = "SELECT * FROM shop";
 
-  if (industry_name) {
-    query += ` WHERE industry_name LIKE '%${industry_name}%'`;
+  if (shop_name) {
+    query += ` WHERE shop_name LIKE '%${shop_name}%'`;
   }
 
   sql.query(query, (err, res) => {

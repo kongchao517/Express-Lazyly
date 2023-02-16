@@ -1,14 +1,14 @@
 {
-  "name": "node",
+  "name": "Express-Lazyly",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express + MySQL + apidoc + pm2",
   "scripts": {
     "start:dev": "cross-env NODE_ENV=development nodemon app.js",
     "start:test": "cross-env NODE_ENV=test node app.js && pm2 start pm2.conf.json",
     "start:pro": "cross-env NODE_ENV=production node app.js && pm2 start pm2.conf.json",
     "apidoc": "apidoc -i app/routes -o public/apidoc"
   },
-  "author": "",
+  "author": "kongchao",
   "license": "ISC",
   "dependencies": {
     "apidoc": "^0.54.0",
@@ -28,7 +28,7 @@
     "pm2": "^5.2.2",
     "prettier": "^2.8.4"
   },
-  "devDependencies": {
-   
-  }
+  "devDependencies": {},
+  "main": "index.js",
+  "repository": "https://github.com/kongchao517/Express-Lazyly.git"
 }
