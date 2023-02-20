@@ -3,7 +3,7 @@
  * @Author: kongchao
  * @Date: 2023-02-16 14:59:08
  * @LastEditors: kongchao
- * @LastEditTime: 2023-02-16 15:05:47
+ * @LastEditTime: 2023-02-20 15:50:29
  */
 // 字符串的下划线格式转驼峰格式，eg：hello_world => helloWorld
 function underline2Hump(s) {
@@ -31,5 +31,13 @@ function jsonToUnderline(obj) {
   return obj
 }
 
-module.exports = {jsonToUnderline} 
+function jsonResult(data,resp,err){
+  return resp.send({
+    code:200,
+    msg:'操作成功！',
+    data:jsonToUnderline(data)
+  });
+}
+
+module.exports = {jsonToUnderline,jsonResult} 
 
