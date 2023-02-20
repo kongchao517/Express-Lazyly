@@ -23,6 +23,3 @@ Express-Lazyly是基于 Express + MySQL + apidoc + pm2 开箱即用的node框架
  生成接口文档
 `npm run apidoc / yarn apidoc`
 
-
-# 封装参考
-https://github.com/bezkoder/nodejs-express-mysql
