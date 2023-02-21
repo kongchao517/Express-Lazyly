@@ -3,7 +3,7 @@
  * @Author: kongchao
  * @Date: 2023-02-08 16:15:03
  * @LastEditors: kongchao
- * @LastEditTime: 2023-02-20 15:35:11
+ * @LastEditTime: 2023-02-20 18:44:18
  */
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -22,6 +22,7 @@ app.all("*", function (req, res, next) {
 	res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
 	// res.header("X-Powered-By", " 3.2.1");
 	res.header("Content-Type", "application/json;charset=utf-8");
+	res.header("Content-Type", "application/x-www-form-urlencoded");
 	//防止攻击
 	app.disable("x-powered-by");
 
