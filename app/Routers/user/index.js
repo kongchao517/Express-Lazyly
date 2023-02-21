@@ -56,7 +56,7 @@ userRouter.get("/api/user/getUser", userCtrl.userSelect);
 userRouter.post("/api/user/addUser", userCtrl.userAdd);
 
 /**
-  * @api {post} /api/user/updateUser 修改用户信息
+  * @api {get} /api/user/updateUser 修改用户信息
   * @apiDescription 修改 username、password、sex、age
   * @apiName updateUser
   * @apiGroup 用户接口
@@ -82,7 +82,7 @@ userRouter.post("/api/user/addUser", userCtrl.userAdd);
   *  }
   */
 
-userRouter.post("/api/user/updateUser", userCtrl.userUpdate);
+userRouter.get("/api/user/updateUser", userCtrl.userUpdate);
 
 /**
   * @api {get} /api/user/deleteUser 删除用户信息

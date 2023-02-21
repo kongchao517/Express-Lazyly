@@ -3,7 +3,8 @@
  * @Author: kongchao
  * @Date: 2023-02-17 15:17:21
  * @LastEditors: kongchao
- * @LastEditTime: 2023-02-20 17:38:08
+ * @LastEditTime: 2023-02-20 18:59:51
+ * 注意参数和sql语句的？要对应
  */
 const userDao = require("../dao/userDao.js");
 const jsonResult =require('../../util.js').jsonResult
@@ -25,6 +26,7 @@ module.exports = {
 	},
 	userAdd(req, resp) {
 		//多个条件必须传[] 单个string
+		console.log("增加post",req.query,req.body)
 		let { username,password,age,sex } = req.query;
 		let us = [username,password,age,sex];
 		userDao.do(userSql[0].add, us, function (err, data) {
